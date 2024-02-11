@@ -1,0 +1,83 @@
+\hypertarget{switch__gateway_8c}{}\doxysection{switch\+\_\+gateway.\+c File Reference}
+\label{switch__gateway_8c}\index{switch\_gateway.c@{switch\_gateway.c}}
+
+
+Implementation of switch gateway functionality.  
+
+
+{\ttfamily \#include \char`\"{}contiki.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}net/rime/rime.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}net/netstack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dev/leds.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core/net/linkaddr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for switch\+\_\+gateway.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{switch__gateway_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrouting__entry}{routing\+\_\+entry}}
+\begin{DoxyCompactList}\small\item\em Holds an entry in the routing table. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsensor__message}{sensor\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Represents a message from a sensor device. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structunicast__packet}{unicast\+\_\+packet}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__switch__gateway_gabd2aacdca9cb2a1a30f3392256b96ea3}{M\+A\+X\+\_\+\+N\+O\+D\+ES}}~5
+\item 
+\#define \mbox{\hyperlink{group__switch__gateway_gaf2570d41872cc53aa12e4edaf9049b82}{I\+N\+F\+I\+N\+I\+T\+Y\+\_\+\+H\+O\+PS}}~255
+\item 
+\#define \mbox{\hyperlink{group__switch__gateway_ga623ec78b7909090dbedac4af1d52abb4}{M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define {\bfseries N\+E\+T\+S\+T\+A\+C\+K\+\_\+\+C\+O\+N\+F\+\_\+\+R\+D\+C nullrdc\+\_\+driver}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__switch__gateway_gad4ba3fd2640af0f3194e720e2a7e483e}{P\+R\+O\+C\+E\+SS}} (\mbox{\hyperlink{group__switch__gateway_ga77f0996c0679c4cf2211581751e82020}{routing\+\_\+process}}, \char`\"{}Routing Process\char`\"{})
+\item 
+\mbox{\hyperlink{group__switch__gateway_ga0b82ff8177c333f2820317cc7a6be517}{P\+R\+O\+C\+E\+SS}} (timeout\+\_\+process, \char`\"{}Timeout Process\char`\"{})
+\item 
+\mbox{\hyperlink{group__switch__gateway_gaa1d716a4f4498a97e4c7b386ef816975}{P\+R\+O\+C\+E\+SS}} (unicast\+\_\+forward\+\_\+process, \char`\"{}Unicast Forward Process\char`\"{})
+\item 
+void \mbox{\hyperlink{group__switch__gateway_ga1a64f6378d3719d018c299186045f8e9}{switch\+\_\+gateway\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the switch gateway functionality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__switch__gateway_ga51661c33b52e9d6e5d6abb4e3200666f}{switch\+\_\+gateway\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the switch gateway processes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__switch__gateway_ga779c1bf9af6c6408707c1b48da0a2cbf}{P\+R\+O\+C\+E\+S\+S\+\_\+\+T\+H\+R\+E\+AD}} (\mbox{\hyperlink{group__switch__gateway_ga77f0996c0679c4cf2211581751e82020}{routing\+\_\+process}}, ev, data)
+\begin{DoxyCompactList}\small\item\em Main routing process to inititite the network discovery and update. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__switch__gateway_ga628162a431c7333dc7d94a150c9bb53e}{P\+R\+O\+C\+E\+S\+S\+\_\+\+T\+H\+R\+E\+AD}} (timeout\+\_\+process, ev, data)
+\begin{DoxyCompactList}\small\item\em Timeout process to handle network failures and timeout routing table entries that are no longer valid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__switch__gateway_gaac20c427df16ebf18678ddcc032c67e3}{P\+R\+O\+C\+E\+S\+S\+\_\+\+T\+H\+R\+E\+AD}} (unicast\+\_\+forward\+\_\+process, ev, data)
+\begin{DoxyCompactList}\small\item\em Unicast forward process handles forwarding the packets that are stored in the queue in a way that avoids collisons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structunicast__packet}{unicast\+\_\+packet}} \mbox{\hyperlink{group__switch__gateway_gadf27ca8838bd951eafca14c4a66d3c31}{unicast\+\_\+queue}} \mbox{[}\mbox{\hyperlink{group__switch__gateway_ga623ec78b7909090dbedac4af1d52abb4}{M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE}}\mbox{]}
+\item 
+int \mbox{\hyperlink{group__switch__gateway_gab0b4be2fd9dc1775c8685aab70045dcd}{queue\+\_\+size}} = 0
+\item 
+struct \mbox{\hyperlink{structrouting__entry}{routing\+\_\+entry}} \mbox{\hyperlink{group__switch__gateway_ga225cc043d7484750a47d5f9aa8cc7a24}{routing\+\_\+table}} \mbox{[}\mbox{\hyperlink{group__switch__gateway_gabd2aacdca9cb2a1a30f3392256b96ea3}{M\+A\+X\+\_\+\+N\+O\+D\+ES}}\mbox{]}
+\item 
+int \mbox{\hyperlink{group__switch__gateway_gae29617de649b665cf0d12c07b31c31d1}{num\+\_\+nodes}} = 0
+\item 
+int \mbox{\hyperlink{group__switch__gateway_ga1caecac93aa6395f1e478e28d9d58bc7}{last\+\_\+entry}} = -\/1
+\item 
+int32\+\_\+t \mbox{\hyperlink{group__switch__gateway_ga6f6b7db849883273bace7febe8ec7133}{node\+\_\+number}} = 7
+\item 
+int8\+\_\+t \mbox{\hyperlink{group__switch__gateway_ga73b4082fdcbeb35eb8284ead071a04ce}{node\+\_\+number2}} =7
+\item 
+A\+U\+T\+O\+S\+T\+A\+R\+T\+\_\+\+P\+R\+O\+C\+E\+S\+S\+ES \& \mbox{\hyperlink{group__switch__gateway_ga77f0996c0679c4cf2211581751e82020}{routing\+\_\+process}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of switch gateway functionality. 
+

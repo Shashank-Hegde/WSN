@@ -1,0 +1,27 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "on_board_sensors"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "on_board_sensors.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/4-Lesson/L4_On_Board_Sensors",
+      "binaryPath": "/home/mel/Lab_Exercises/4-Lesson/L4_On_Board_Sensors/on_board_sensors.elf",
+      "binaryArgs": []
+    }
+  ]
+}

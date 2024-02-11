@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Linux GCC x64",
+            "includePath": [
+                "/home/mel/Lab_Exercises/1-Lesson/L1_First_App/**",
+                "${workspaceFolder}/**",
+                // insert code
+                "${HOME}/contiki/",
+                "${HOME}/contiki/core/",
+                "${HOME}/contiki/core/sys/",
+                "${HOME}/contiki/cpu/",
+                "${HOME}/contiki/platform/",
+                "${HOME}/contiki/platform/zoul/"
+            ],
+
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-arm",
+            "mergeConfigurations": false,
+            "compilerPath": "/home/mel/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc",
+            "configurationProvider": "ms-vscode.makefile-tools",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "${workspaceFolder}/**"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}

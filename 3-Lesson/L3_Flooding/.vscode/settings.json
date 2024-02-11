@@ -1,0 +1,27 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "flooding"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "flooding.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/3-Lesson/L3_Flooding",
+      "binaryPath": "/home/mel/Lab_Exercises/3-Lesson/L3_Flooding/flooding.elf",
+      "binaryArgs": []
+    }
+  ]
+}

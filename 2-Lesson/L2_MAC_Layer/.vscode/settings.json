@@ -1,0 +1,27 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "mac_configuration"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "mac_configuration.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/2-Lesson/L2_MAC_Layer",
+      "binaryPath": "/home/mel/Lab_Exercises/2-Lesson/L2_MAC_Layer/mac_configuration.elf",
+      "binaryArgs": []
+    }
+  ]
+}

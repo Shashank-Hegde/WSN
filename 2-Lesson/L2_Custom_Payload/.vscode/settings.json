@@ -1,0 +1,27 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "custom_payload"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "custom_payload.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/2-Lesson/L2_Custom_Payload",
+      "binaryPath": "/home/mel/Lab_Exercises/2-Lesson/L2_Custom_Payload/custom_payload.elf",
+      "binaryArgs": []
+    }
+  ]
+}

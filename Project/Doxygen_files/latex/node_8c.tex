@@ -1,0 +1,72 @@
+\hypertarget{node_8c}{}\doxysection{node.\+c File Reference}
+\label{node_8c}\index{node.c@{node.c}}
+
+
+Wireless nodes code for player devices in the W\+SN Lab project.  
+
+
+{\ttfamily \#include \char`\"{}contiki.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}net/rime/rime.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}net/netstack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dev/leds.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dev/button-\/sensor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dev/adc-\/zoul.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dev/zoul-\/sensors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dev/sys-\/ctrl.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for node.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{node_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsensor__message}{sensor\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em Represents a message from a sensor device. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrouting__entry}{routing\+\_\+entry}}
+\begin{DoxyCompactList}\small\item\em Holds an entry in the routing table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__node_ga713b73648671626232b7f8c3dca1d939}{N\+E\+T\+S\+T\+A\+C\+K\+\_\+\+C\+O\+N\+F\+\_\+\+R\+DC}}~nullrdc\+\_\+driver
+\begin{DoxyCompactList}\small\item\em Definition for Null\+R\+DC driver. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__node_gaecf13b8dc783db2202ca5c34fe117fc3}{M\+A\+X\+\_\+\+R\+E\+T\+R\+I\+ES}}~3
+\begin{DoxyCompactList}\small\item\em Maximum number of retries for a process. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__node_gabd2aacdca9cb2a1a30f3392256b96ea3}{M\+A\+X\+\_\+\+N\+O\+D\+ES}}~5
+\begin{DoxyCompactList}\small\item\em Maximum number of nodes in the network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries P\+R\+O\+C\+E\+SS} (example\+\_\+unicast\+\_\+process, \char`\"{}Runicast Example\char`\"{})
+\item 
+\mbox{\hyperlink{group__node_gaa2ed45f9640a24be00dbad2d36710835}{P\+R\+O\+C\+E\+S\+S\+\_\+\+T\+H\+R\+E\+AD}} (example\+\_\+unicast\+\_\+process, ev, data)
+\begin{DoxyCompactList}\small\item\em Main process thread for the example unicast process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__node_ga0a483be3e44e8e702a75bc00ab6f265a}{print\+\_\+packetbuffer}} ()
+\begin{DoxyCompactList}\small\item\em Prints the content of the packet buffer as a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__node_gaf67f2d9bf2a3d386e95b154c02aa38aa}{copy\+\_\+and\+\_\+print\+\_\+packetbuffer}} ()
+\begin{DoxyCompactList}\small\item\em Copies and prints the content of the packet buffer. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__node_gae2145fce3003f61bc3adf809037cdc16}{battery\+\_\+level\+\_\+get}} (void)
+\begin{DoxyCompactList}\small\item\em Retrieves the current battery level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+A\+U\+T\+O\+S\+T\+A\+R\+T\+\_\+\+P\+R\+O\+C\+E\+S\+S\+ES \& {\bfseries example\+\_\+unicast\+\_\+process}
+\item 
+int32\+\_\+t {\bfseries node\+\_\+number} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wireless nodes code for player devices in the W\+SN Lab project. 
+
+This file contains the implementation of wireless nodes used to track the health and performance of athletes in real-\/time. The nodes communicate with each other and a central gateway through wireless sensor networks.
+
+\begin{DoxyAuthor}{Author}
+Group 5 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 30, 2023 
+\end{DoxyDate}

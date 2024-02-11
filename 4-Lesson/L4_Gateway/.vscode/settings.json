@@ -1,0 +1,27 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "gateway"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "gateway.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/4-Lesson/L4_Gateway",
+      "binaryPath": "/home/mel/Lab_Exercises/4-Lesson/L4_Gateway/gateway.elf",
+      "binaryArgs": []
+    }
+  ]
+}

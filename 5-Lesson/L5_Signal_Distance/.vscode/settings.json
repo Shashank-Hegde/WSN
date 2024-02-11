@@ -1,0 +1,27 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "signal_distance"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "signal_distance.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/5-Lesson/L5_Signal_Distance",
+      "binaryPath": "/home/mel/Lab_Exercises/5-Lesson/L5_Signal_Distance/signal_distance.elf",
+      "binaryArgs": []
+    }
+  ]
+}

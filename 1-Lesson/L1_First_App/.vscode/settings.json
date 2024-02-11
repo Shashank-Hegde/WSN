@@ -1,0 +1,35 @@
+{
+    "makefile.configurations": [
+        {
+            "name": "Default",
+            "makeArgs": [
+                "TARGET=zoul",
+                "BOARD=remote-revb",
+                "first_app"
+            ]
+        },
+        {   
+            "name": "Upload",
+            "makeArgs": [
+                "TARGET=zoul",
+                "BOARD=remote-revb",
+                "first_app.upload"
+            ]
+        }
+    ],
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/mel/Lab_Exercises/1-Lesson/L1_First_App",
+            "binaryPath": "/home/mel/Lab_Exercises/1-Lesson/L1_First_App/first_app.elf",
+            "binaryArgs": []
+        }
+    ],
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "ranges": "c",
+        "serial-line.h": "c"
+    },
+}

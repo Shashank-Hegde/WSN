@@ -1,0 +1,28 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "transmission_power"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "transmission_power.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/2-Lesson/L2_Transmission_Power",
+      "binaryPath": "/home/mel/Lab_Exercises/2-Lesson/L2_Transmission_Power/transmission_power.elf",
+      "binaryArgs": []
+    }
+  ],
+  "C_Cpp.errorSquiggles": "disabled"
+}

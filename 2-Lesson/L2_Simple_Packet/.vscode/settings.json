@@ -1,0 +1,43 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "simple_packet"
+      ]
+    },
+    {
+      "name": "contiki_upload_tty0",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "PORT=/dev/ttyUSB0",
+        "simple_packet.upload"
+      ]
+    },
+    {
+      "name": "contiki_upload_tty1",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "PORT=/dev/ttyUSB1",
+        "simple_packet.upload"
+      ]
+    },
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/2-Lesson/L2_Simple_Packet",
+      "binaryPath": "/home/mel/Lab_Exercises/2-Lesson/L2_Simple_Packet/simple_packet.elf",
+      "binaryArgs": []
+    }
+  ],
+  "files.associations": {
+    "rime.h": "c",
+    "contiki.h": "c",
+    "leds.h": "c",
+    "netstack.h": "c"
+  }
+}

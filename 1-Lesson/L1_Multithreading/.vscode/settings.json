@@ -1,0 +1,32 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "multithreading"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "multithreading.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/1-Lesson/L1_Multithreading",
+      "binaryPath": "/home/mel/Lab_Exercises/1-Lesson/L1_Multithreading/multithreading.elf",
+      "binaryArgs": []
+    }
+  ],
+  "files.associations": {
+    "array": "c",
+    "string": "c",
+    "string_view": "c"
+  }
+}

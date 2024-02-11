@@ -1,0 +1,95 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File - Debug",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "args": [],
+      "env": {},
+      "stopOnEntry": false,
+      "justMyCode": false,
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    },
+    {
+      "name": "Python: Current File - Run",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "args": [],
+      "env": {},
+      "stopOnEntry": false,
+      "justMyCode": false,
+      "debugOptions": [
+        "RedirectOutput"
+      ]
+    },
+    {
+      "name": "Python: main.py - Debug",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/GUI/main.py",
+      "console": "integratedTerminal",
+      "args": ["test"],
+      "env": {},
+      "stopOnEntry": false,
+      "justMyCode": false,
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    },
+    {
+      "name": "Python: main.py - Run",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/GUI/main.py",
+      "console": "integratedTerminal",
+      "args": ["test"],
+      "env": {},
+      "stopOnEntry": false,
+      "justMyCode": false,
+      "debugOptions": [
+        "RedirectOutput"
+      ]
+    },
+    {
+      "name": "Python: mock_serial.py - Debug",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/GUI/mock_serial.py",
+      "console": "integratedTerminal",
+      "args": [],
+      "env": {},
+      "stopOnEntry": false,
+      "justMyCode": false,
+      "debugOptions": [
+        "WaitOnAbnormalExit",
+        "WaitOnNormalExit",
+        "RedirectOutput"
+      ]
+    },
+    {
+      "name": "Python: mock_serial.py - Run",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/GUI/mock_serial.py",
+      "console": "integratedTerminal",
+      "args": [],
+      "env": {},
+      "stopOnEntry": false,
+      "justMyCode": false,
+      "debugOptions": [
+        "RedirectOutput"
+      ]
+    }
+  ]
+}

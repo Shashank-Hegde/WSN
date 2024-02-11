@@ -1,0 +1,31 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "timers_and_threads"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "timers_and_threads.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/1-Lesson/L1_Timers_and_Threads",
+      "binaryPath": "/home/mel/Lab_Exercises/1-Lesson/L1_Timers_and_Threads/timers_and_threads.elf",
+      "binaryArgs": []
+    }
+  ],
+  "files.associations": {
+    "leds.h": "c",
+    "ctimer.h": "c"
+  }
+}

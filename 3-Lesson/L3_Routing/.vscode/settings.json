@@ -1,0 +1,28 @@
+{
+  "makefile.configurations": [
+    {
+      "name": "contiki_default",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "routing"
+      ]
+    },
+    {
+      "name": "contiki_upload",
+      "makeArgs": [
+        "TARGET=zoul",
+        "BOARD=remote-revb",
+        "NODEID=0x1313",
+        "routing.upload"
+      ]
+    }
+  ],
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/mel/Lab_Exercises/3-Lesson/L3_Routing",
+      "binaryPath": "/home/mel/Lab_Exercises/3-Lesson/L3_Routing/routing.elf",
+      "binaryArgs": []
+    }
+  ]
+}
